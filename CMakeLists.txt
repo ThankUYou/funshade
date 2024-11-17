@@ -8,11 +8,12 @@ set(CMAKE_C_STANDARD 90)
 ## target definitions #########################################################
 ###############################################################################
 
-add_compile_options(-O3 -msse -msse2 -maes -march=native -Wall -Wextra)
+add_compile_options(-Wall -Wextra)
+# add_compile_options(-O3 -msse -msse2 -maes -march=native -Wall -Wextra)
 # add_compile_definitions(USE_LIBSODIUM) # Use libsodium for cryptographically secure RNG
 # add_compile_definitions(USE_PARALLEL)  # Use OpenMP for parallelization
 include_directories(.)
-link_libraries(sodium)
+# link_libraries(sodium)
 # link_libraries(gomp)
 
 # # Build shared library
